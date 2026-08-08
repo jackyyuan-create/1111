@@ -1,0 +1,2548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>男装数码印专题直播 - 商家培训指南</title>
+<style>
+/* Font fallback - use system fonts if Google Fonts unavailable */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+</style>
+<style>
+/* ===== CSS Reset & Variables ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-primary: #F5EFE0;
+  --bg-card: #FFFFFF;
+  --bg-dark: #1A1A1A;
+  --color-green: #2D7D5E;
+  --color-green-light: #3A9B77;
+  --color-green-dark: #1F5C44;
+  --color-orange: #E8783A;
+  --color-orange-light: #F09055;
+  --color-orange-dark: #C5602A;
+  --color-text: #2C2C2C;
+  --color-text-light: #666666;
+  --color-text-muted: #999999;
+  --color-border: #E0D9C8;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-primary);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 0;
+  transition: var(--transition);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 60px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar-logo .logo-icon {
+  width: 32px;
+  height: 32px;
+  background: var(--color-orange);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+.navbar-menu a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.navbar-menu a:hover, .navbar-menu a.active {
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+}
+
+.navbar-cta {
+  background: var(--color-orange);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.navbar-cta:hover { background: var(--color-orange-dark); transform: translateY(-1px); }
+
+/* ===== Hero Section ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(135deg, #1A1A1A 0%, #2C2C2C 100%);
+  overflow: hidden;
+  padding: 80px 30px 40px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(232,120,58,0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(45,125,94,0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-pattern {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0.03;
+  background-image: repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 1px, transparent 30px);
+  pointer-events: none;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-content { color: #fff; }
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(232,120,58,0.15);
+  border: 1px solid rgba(232,120,58,0.3);
+  color: var(--color-orange-light);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.hero-badge .pulse {
+  width: 8px;
+  height: 8px;
+  background: var(--color-orange);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.hero-title .highlight {
+  background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+.hero-info {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.hero-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+}
+
+.hero-info-item .icon-circle {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.btn-primary {
+  background: var(--color-orange);
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover { background: var(--color-orange-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,120,58,0.3); }
+
+.btn-secondary {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: var(--transition);
+  border: 1px solid rgba(255,255,255,0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-secondary:hover { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); }
+
+.hero-visual {
+  position: relative;
+  height: 500px;
+}
+
+.hero-card {
+  position: absolute;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+}
+
+.hero-card-1 {
+  top: 0; right: 0;
+  width: 70%; height: 320px;
+  background: linear-gradient(135deg, var(--color-green-dark) 0%, var(--color-green) 100%);
+  z-index: 3;
+}
+
+.hero-card-2 {
+  bottom: 0; left: 0;
+  width: 60%; height: 260px;
+  background: linear-gradient(135deg, var(--color-orange-dark) 0%, var(--color-orange) 100%);
+  z-index: 2;
+}
+
+.hero-card-3 {
+  top: 40%; right: 10%;
+  width: 45%; height: 200px;
+  background: linear-gradient(135deg, #444 0%, #666 100%);
+  z-index: 1;
+}
+
+.hero-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.6));
+  color: #fff;
+}
+
+.hero-card-content .label { font-size: 12px; opacity: 0.8; margin-bottom: 4px; }
+.hero-card-content .value { font-size: 20px; font-weight: 700; }
+
+.hero-card-deco {
+  position: absolute;
+  top: 20px; right: 20px;
+  width: 50px; height: 50px;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+}
+
+.hero-card-deco-2 {
+  position: absolute;
+  top: 50%; left: 30%;
+  width: 80px; height: 80px;
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 50%;
+}
+
+/* ===== Section Common ===== */
+.section {
+  padding: 80px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-full { max-width: 100%; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--color-green);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--color-text);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== TOC Section ===== */
+.toc {
+  background: var(--bg-card);
+  padding: 60px 30px;
+  margin: 0;
+  max-width: 100%;
+}
+
+.toc-container { max-width: 1200px; margin: 0 auto; }
+
+.toc-tag {
+  display: inline-block;
+  background: var(--color-green);
+  color: #fff;
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.toc-card {
+  background: var(--bg-primary);
+  border: 2px solid transparent;
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  transition: var(--transition);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.toc-card:hover {
+  border-color: var(--color-green);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.toc-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 4px;
+  background: var(--color-green);
+  transform: scaleX(0);
+  transition: var(--transition);
+  transform-origin: left;
+}
+
+.toc-card:hover::before { transform: scaleX(1); }
+
+.toc-card-num {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-orange);
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.toc-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.toc-card:nth-child(1) .toc-card-icon { background: rgba(45,125,94,0.1); color: var(--color-green); }
+.toc-card:nth-child(2) .toc-card-icon { background: rgba(232,120,58,0.1); color: var(--color-orange); }
+.toc-card:nth-child(3) .toc-card-icon { background: rgba(45,125,94,0.1); color: var(--color-green); }
+.toc-card:nth-child(4) .toc-card-icon { background: rgba(232,120,58,0.1); color: var(--color-orange); }
+
+.toc-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.toc-card-desc {
+  font-size: 13px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ===== Module 1: Title Optimization ===== */
+.module {
+  padding: 80px 30px;
+}
+
+.module-bg-alt { background: var(--bg-card); }
+
+.module-container { max-width: 1200px; margin: 0 auto; }
+
+.module-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.module-header .module-num {
+  width: 40px;
+  height: 40px;
+  background: var(--color-orange);
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.module-header .module-label {
+  font-size: 14px;
+  color: var(--color-orange);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.module-title {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.module-desc {
+  font-size: 15px;
+  color: var(--color-text-light);
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+/* Formula Card */
+.formula-card {
+  background: linear-gradient(135deg, var(--color-green-dark) 0%, var(--color-green) 100%);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.formula-card::before {
+  content: '';
+  position: absolute;
+  top: -50%; right: -10%;
+  width: 400px; height: 400px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+}
+
+.formula-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.formula-subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.formula-structure {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.formula-element {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.formula-plus { font-size: 18px; opacity: 0.6; }
+
+.formula-elements-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  position: relative;
+}
+
+.formula-element-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.formula-element-card:hover { background: rgba(255,255,255,0.15); transform: translateY(-4px); }
+
+.formula-element-card .num {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 8px;
+}
+
+.formula-element-card .name {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.formula-element-card .desc {
+  font-size: 12px;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+
+/* Tips Grid */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.tip-card {
+  background: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  transition: var(--transition);
+  position: relative;
+}
+
+.tip-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+.tip-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tip-card-num {
+  width: 36px;
+  height: 36px;
+  background: var(--color-green);
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.tip-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.tip-card-body { font-size: 14px; color: var(--color-text-light); line-height: 1.8; }
+
+.tip-card-body p { margin-bottom: 8px; }
+.tip-card-body p:last-child { margin-bottom: 0; }
+
+/* Before/After Comparison */
+.comparison {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 40px;
+}
+
+.comparison-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.comparison-box {
+  padding: 24px;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.comparison-box.before {
+  background: #F8F5F0;
+  border: 2px dashed var(--color-border);
+}
+
+.comparison-box.after {
+  background: rgba(45,125,94,0.05);
+  border: 2px solid var(--color-green);
+}
+
+.comparison-label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.comparison-box.before .comparison-label { color: var(--color-text-muted); }
+.comparison-box.after .comparison-label { color: var(--color-green); }
+
+.comparison-text {
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+.comparison-arrow {
+  width: 56px;
+  height: 56px;
+  background: var(--color-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+/* Data Monitor */
+.data-monitor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.monitor-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  border-left: 4px solid var(--color-orange);
+  transition: var(--transition);
+}
+
+.monitor-card:hover { box-shadow: var(--shadow-md); }
+
+.monitor-card .step-num {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-orange);
+  margin-bottom: 8px;
+}
+
+.monitor-card .step-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.monitor-card .step-desc {
+  font-size: 13px;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+/* ===== AI Image Optimization ===== */
+.ai-section {
+  background: var(--bg-card);
+  padding: 80px 30px;
+}
+
+.ai-container { max-width: 1200px; margin: 0 auto; }
+
+.ai-market-card {
+  background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.ai-market-info h3 { font-size: 22px; font-weight: 700; margin-bottom: 16px; }
+
+.ai-market-info p { font-size: 14px; opacity: 0.85; line-height: 1.8; margin-bottom: 16px; }
+
+.ai-market-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.ai-market-tag {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 12px;
+}
+
+.ai-market-visual {
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius-md);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ai-market-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ai-market-bar .bar-label { font-size: 13px; width: 120px; opacity: 0.8; }
+
+.ai-market-bar .bar-track {
+  flex: 1;
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.ai-market-bar .bar-fill {
+  height: 100%;
+  background: var(--color-orange);
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+.ai-market-bar .bar-value { font-size: 13px; font-weight: 600; width: 50px; text-align: right; }
+
+/* AI Steps */
+.ai-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.ai-step-card {
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  text-align: center;
+  transition: var(--transition);
+  position: relative;
+}
+
+.ai-step-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+.ai-step-num {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: var(--color-orange);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ai-step-icon { font-size: 36px; margin-bottom: 16px; margin-top: 8px; }
+.ai-step-title { font-size: 16px; font-weight: 700; color: var(--color-text); margin-bottom: 8px; }
+.ai-step-desc { font-size: 13px; color: var(--color-text-light); line-height: 1.7; }
+
+/* Scene Cards */
+.scene-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.scene-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid var(--color-border);
+}
+
+.scene-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.scene-card-header {
+  padding: 24px;
+  color: #fff;
+}
+
+.scene-card:nth-child(1) .scene-card-header { background: linear-gradient(135deg, #2D7D5E 0%, #3A9B77 100%); }
+.scene-card:nth-child(2) .scene-card-header { background: linear-gradient(135deg, #E8783A 0%, #F09055 100%); }
+.scene-card:nth-child(3) .scene-card-header { background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%); }
+
+.scene-card-header h4 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+.scene-card-header p { font-size: 13px; opacity: 0.85; }
+
+.scene-card-body { padding: 24px; }
+
+.scene-card-body .section-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-orange);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.scene-card-body .section-text {
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+.ai-prompt {
+  background: rgba(45,125,94,0.05);
+  border-left: 3px solid var(--color-green);
+  padding: 14px 16px;
+  border-radius: 0 8px 8px 0;
+  font-size: 12px;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-top: 12px;
+}
+
+.ai-prompt .prompt-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-green);
+  margin-bottom: 4px;
+}
+
+/* ===== Module 2: Pattern Library ===== */
+.pattern-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.pattern-def-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+}
+
+.pattern-def-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-text);
+}
+
+.pattern-def-card p { font-size: 14px; color: var(--color-text-light); line-height: 1.8; margin-bottom: 20px; }
+
+.pattern-features {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pattern-feature {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(45,125,94,0.08);
+  color: var(--color-green);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pattern-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pattern-benefit {
+  background: linear-gradient(135deg, var(--color-green-dark) 0%, var(--color-green) 100%);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pattern-benefit:nth-child(2) { background: linear-gradient(135deg, var(--color-orange-dark) 0%, var(--color-orange) 100%); }
+.pattern-benefit:nth-child(3) { background: linear-gradient(135deg, #444 0%, #666 100%); }
+
+.pattern-benefit .benefit-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.pattern-benefit .benefit-text h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.pattern-benefit .benefit-text p { font-size: 13px; opacity: 0.85; }
+
+/* Path Steps */
+.path-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.path-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.path-step-num {
+  width: 32px;
+  height: 32px;
+  background: var(--color-green);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.path-step-text { font-size: 14px; color: var(--color-text); font-weight: 500; }
+
+.path-arrow { color: var(--color-text-muted); font-size: 18px; }
+
+/* Merchant Flow */
+.merchant-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.flow-card {
+  background: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  position: relative;
+  transition: var(--transition);
+}
+
+.flow-card:hover { box-shadow: var(--shadow-md); border-color: var(--color-green); }
+
+.flow-card-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(232,120,58,0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin: 0 auto 16px;
+}
+
+.flow-card-title { font-size: 14px; font-weight: 700; color: var(--color-text); margin-bottom: 8px; }
+.flow-card-desc { font-size: 12px; color: var(--color-text-light); line-height: 1.6; }
+
+.flow-arrow {
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: var(--color-green);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  z-index: 1;
+}
+
+/* ===== Module 3: Trends ===== */
+.trend-section { padding: 80px 30px; }
+
+.trend-container { max-width: 1200px; margin: 0 auto; }
+
+/* Hot-selling types */
+.hot-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.hot-type-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  text-align: center;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.hot-type-card:hover { border-color: var(--color-orange); transform: translateY(-4px); }
+
+.hot-type-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-light) 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 16px;
+  color: #fff;
+}
+
+.hot-type-name { font-size: 16px; font-weight: 700; color: var(--color-text); }
+.hot-type-tag {
+  display: inline-block;
+  margin-top: 8px;
+  background: rgba(232,120,58,0.1);
+  color: var(--color-orange);
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Missing types */
+.missing-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.missing-type-card {
+  background: rgba(232,120,58,0.05);
+  border: 2px dashed var(--color-orange);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  text-align: center;
+}
+
+.missing-type-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(232,120,58,0.1);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 12px;
+}
+
+.missing-type-name { font-size: 15px; font-weight: 700; color: var(--color-text); }
+.missing-type-label {
+  display: inline-block;
+  margin-top: 8px;
+  background: var(--color-orange);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* World Cup */
+.worldcup-banner {
+  background: linear-gradient(135deg, #1A472A 0%, #2D7D5E 100%);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.worldcup-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%; right: -10%;
+  width: 300px; height: 300px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+}
+
+.worldcup-banner h3 { font-size: 24px; font-weight: 900; margin-bottom: 12px; position: relative; }
+.worldcup-banner p { font-size: 14px; opacity: 0.85; line-height: 1.8; position: relative; }
+
+.worldcup-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wc-event {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.wc-event-date {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--color-orange-light);
+  white-space: nowrap;
+}
+
+.wc-event-info h5 { font-size: 14px; font-weight: 700; }
+.wc-event-info p { font-size: 12px; opacity: 0.7; margin: 0; }
+
+/* Season Timeline */
+.season-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.season-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.season-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+
+.season-card .season-badge {
+  display: inline-block;
+  background: var(--color-green);
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.season-card:nth-child(2) .season-badge { background: var(--color-orange); }
+.season-card:nth-child(3) .season-badge { background: #444; }
+
+.season-card h4 { font-size: 17px; font-weight: 700; color: var(--color-text); margin-bottom: 12px; }
+
+.season-card .season-action {
+  font-size: 13px;
+  color: var(--color-text);
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.season-card .season-action strong { color: var(--color-green); }
+.season-card:nth-child(2) .season-action strong { color: var(--color-orange); }
+
+.season-card .season-reason {
+  font-size: 12px;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Holiday Elements */
+.holiday-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.holiday-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  transition: var(--transition);
+}
+
+.holiday-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+
+.holiday-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.holiday-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+}
+
+.holiday-card:nth-child(1) .holiday-icon { background: linear-gradient(135deg, #E8783A, #F09055); }
+.holiday-card:nth-child(2) .holiday-icon { background: linear-gradient(135deg, #B85042, #D4654A); }
+.holiday-card:nth-child(3) .holiday-icon { background: linear-gradient(135deg, #2D7D5E, #3A9B77); }
+
+.holiday-name { font-size: 15px; font-weight: 700; color: var(--color-text); }
+.holiday-date { font-size: 12px; color: var(--color-text-muted); }
+
+.holiday-elements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.holiday-element {
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 12px;
+  color: var(--color-text-light);
+}
+
+/* Autumn/Winter Patterns */
+.aw-patterns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.aw-pattern-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 24px 16px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid var(--color-border);
+}
+
+.aw-pattern-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+.aw-pattern-num {
+  font-size: 12px;
+  color: var(--color-orange);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.aw-pattern-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin: 0 auto 12px;
+}
+
+.aw-pattern-card:nth-child(1) .aw-pattern-icon { background: rgba(139,69,19,0.15); }
+.aw-pattern-card:nth-child(2) .aw-pattern-icon { background: rgba(75,0,130,0.15); }
+.aw-pattern-card:nth-child(3) .aw-pattern-icon { background: rgba(0,100,0,0.15); }
+.aw-pattern-card:nth-child(4) .aw-pattern-icon { background: rgba(70,130,180,0.15); }
+.aw-pattern-card:nth-child(5) .aw-pattern-icon { background: rgba(25,25,25,0.15); }
+
+.aw-pattern-name { font-size: 14px; font-weight: 700; color: var(--color-text); margin-bottom: 6px; }
+.aw-pattern-desc { font-size: 12px; color: var(--color-text-light); line-height: 1.5; }
+
+/* AW Types */
+.aw-types-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.aw-type-section {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.aw-type-section h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.aw-type-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.aw-type-item {
+  background: var(--bg-primary);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aw-type-item .item-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-green);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.aw-type-item:nth-child(odd) .item-dot { background: var(--color-orange); }
+
+.aw-type-item span { font-size: 13px; color: var(--color-text); font-weight: 500; }
+
+/* ===== Module 4: Compliance ===== */
+.compliance-section {
+  padding: 80px 30px;
+  background: var(--bg-card);
+}
+
+.compliance-container { max-width: 1200px; margin: 0 auto; }
+
+.warning-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.warning-card {
+  background: #FFF5F0;
+  border: 2px solid rgba(232,120,58,0.2);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.warning-card:hover { border-color: var(--color-orange); transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+.warning-card::before {
+  content: '⚠';
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 40px;
+  opacity: 0.1;
+}
+
+.warning-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--color-orange);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.warning-title { font-size: 16px; font-weight: 700; color: var(--color-text); margin-bottom: 10px; }
+.warning-desc { font-size: 13px; color: var(--color-text-light); line-height: 1.8; }
+
+.warning-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  color: var(--color-green);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 16px;
+  background: rgba(45,125,94,0.08);
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.warning-link:hover { background: rgba(45,125,94,0.15); }
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--bg-dark);
+  color: #fff;
+  padding: 60px 30px 30px;
+  text-align: center;
+}
+
+.footer-container { max-width: 1200px; margin: 0 auto; }
+
+.footer-title {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.footer-title .highlight {
+  background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-subtitle { font-size: 15px; opacity: 0.6; margin-bottom: 32px; }
+
+.footer-actions { display: flex; gap: 16px; justify-content: center; margin-bottom: 40px; flex-wrap: wrap; }
+
+.footer-info {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-info-item { display: flex; align-items: center; gap: 8px; font-size: 13px; opacity: 0.6; }
+
+.footer-copyright { font-size: 12px; opacity: 0.4; }
+
+/* ===== Responsive ===== */
+@media (max-width: 968px) {
+  .hero-container { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual { height: 300px; }
+  .hero-title { font-size: 36px; }
+  .toc-grid { grid-template-columns: repeat(2, 1fr); }
+  .formula-elements-grid { grid-template-columns: repeat(2, 1fr); }
+  .tips-grid { grid-template-columns: 1fr; }
+  .data-monitor { grid-template-columns: 1fr; }
+  .ai-steps { grid-template-columns: 1fr; }
+  .scene-grid { grid-template-columns: 1fr; }
+  .pattern-intro { grid-template-columns: 1fr; }
+  .merchant-flow { grid-template-columns: repeat(2, 1fr); }
+  .hot-types { grid-template-columns: 1fr; }
+  .missing-types { grid-template-columns: 1fr; }
+  .worldcup-banner { grid-template-columns: 1fr; }
+  .season-timeline { grid-template-columns: 1fr; }
+  .holiday-grid { grid-template-columns: 1fr; }
+  .aw-patterns { grid-template-columns: repeat(2, 1fr); }
+  .aw-types-grid { grid-template-columns: 1fr; }
+  .warning-grid { grid-template-columns: 1fr; }
+  .comparison-grid { grid-template-columns: 1fr; gap: 16px; }
+  .comparison-arrow { transform: rotate(90deg); margin: 0 auto; }
+  .navbar-menu { display: none; }
+  .ai-market-card { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .section { padding: 60px 20px; }
+  .module { padding: 60px 20px; }
+  .hero-title { font-size: 28px; }
+  .section-title { font-size: 26px; }
+  .toc-grid { grid-template-columns: 1fr; }
+  .formula-elements-grid { grid-template-columns: 1fr; }
+  .merchant-flow { grid-template-columns: 1fr; }
+  .aw-patterns { grid-template-columns: 1fr; }
+  .aw-type-list { grid-template-columns: 1fr; }
+}
+
+/* ===== Animations ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 3px;
+  background: var(--color-orange);
+  z-index: 999;
+  transition: width 0.1s;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-logo">
+      <div class="logo-icon">印</div>
+      <span>数码印专题</span>
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="#hero" class="active">首页</a></li>
+      <li><a href="#toc">课程目录</a></li>
+      <li><a href="#module1">图文提效</a></li>
+      <li><a href="#module2">版型库</a></li>
+      <li><a href="#module3">趋势分析</a></li>
+      <li><a href="#module4">避雷指南</a></li>
+    </ul>
+    <a href="#toc" class="navbar-cta">开始学习</a>
+  </div>
+</nav>
+<div class="scroll-progress" id="scrollProgress" style="width: 0%"></div>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        <span>商家专属培训课程</span>
+      </div>
+      <h1 class="hero-title">男装数码印<br><span class="highlight">专题直播</span></h1>
+      <p class="hero-subtitle">从标题优化到AI商详改造，从版型库使用到潮流趋势分析，全方位提升数码印花商品运营能力，助力商家爆单增长。</p>
+      <div class="hero-info">
+        <div class="hero-info-item">
+          <div class="icon-circle">📢</div>
+          <span>宣讲人：桓元子</span>
+        </div>
+        <div class="hero-info-item">
+          <div class="icon-circle">📅</div>
+          <span>2026.5.29</span>
+        </div>
+        <div class="hero-info-item">
+          <div class="icon-circle">📚</div>
+          <span>4大核心模块</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#toc" class="btn-primary">查看课程目录 →</a>
+        <a href="#module1" class="btn-secondary">立即学习</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card hero-card-1">
+        <div class="hero-card-deco"></div>
+        <div class="hero-card-content">
+          <div class="label">核心模块</div>
+          <div class="value">图文提效指南</div>
+        </div>
+      </div>
+      <div class="hero-card hero-card-2">
+        <div class="hero-card-deco-2"></div>
+        <div class="hero-card-content">
+          <div class="label">实操工具</div>
+          <div class="value">版型库高效开款</div>
+        </div>
+      </div>
+      <div class="hero-card hero-card-3">
+        <div class="hero-card-content">
+          <div class="label">市场洞察</div>
+          <div class="value">流行趋势分析</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOC -->
+<section class="toc" id="toc">
+  <div class="toc-container">
+    <div style="text-align: center;">
+      <span class="toc-tag">爆单爆单~~~</span>
+      <h2 class="section-title" style="margin-top: 16px;">课程目录</h2>
+      <p class="section-subtitle">四大核心模块，系统化提升数码印花商品运营能力</p>
+    </div>
+    <div class="toc-grid">
+      <div class="toc-card" onclick="location.href='#module1'">
+        <div class="toc-card-num">MODULE 01</div>
+        <div class="toc-card-icon">📝</div>
+        <h3 class="toc-card-title">数码印花图文提效指南</h3>
+        <p class="toc-card-desc">标题优化万能公式、四大核心技巧、AI图片优化实操</p>
+      </div>
+      <div class="toc-card" onclick="location.href='#module2'">
+        <div class="toc-card-num">MODULE 02</div>
+        <div class="toc-card-icon">📐</div>
+        <h3 class="toc-card-title">巧用平台版型库高效开款</h3>
+        <p class="toc-card-desc">版型学习资料使用路径、商家操作流程、权益保障</p>
+      </div>
+      <div class="toc-card" onclick="location.href='#module3'">
+        <div class="toc-card-num">MODULE 03</div>
+        <div class="toc-card-icon">📊</div>
+        <h3 class="toc-card-title">流行印花趋势分析</h3>
+        <p class="toc-card-desc">春夏热销款总结、世界杯流量把握、秋冬开款推荐</p>
+      </div>
+      <div class="toc-card" onclick="location.href='#module4'">
+        <div class="toc-card-num">MODULE 04</div>
+        <div class="toc-card-icon">🛡️</div>
+        <h3 class="toc-card-title">描述不符避雷指南</h3>
+        <p class="toc-card-desc">AI图过度美化、3D误导、参数不符三大常见问题规避</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Module 1: Title Optimization -->
+<section class="module" id="module1">
+  <div class="module-container">
+    <div class="module-header">
+      <div class="module-num">1</div>
+      <span class="module-label">MODULE 01</span>
+    </div>
+    <h2 class="module-title">数码印花图文提效指南</h2>
+    <p class="module-desc">掌握爆款标题万能公式，巧用AI优化商详图片，系统化提升商品搜索流量与点击率。</p>
+
+    <!-- Title Optimization Formula -->
+    <div class="formula-card fade-in">
+      <h3 class="formula-title">爆款标题万能公式</h3>
+      <p class="formula-subtitle">让标题自带流量！从五个维度系统化构建高吸引力、高相关性的商品标题。</p>
+      <div class="formula-structure">
+        <div class="formula-element">[数量]</div>
+        <span class="formula-plus">+</span>
+        <div class="formula-element">[核心品类词]</div>
+        <span class="formula-plus">+</span>
+        <div class="formula-element">[核心属性词]</div>
+        <span class="formula-plus">+</span>
+        <div class="formula-element">[风格/图案词]</div>
+        <span class="formula-plus">+</span>
+        <div class="formula-element">[适用场景/人群]</div>
+      </div>
+      <div class="formula-elements-grid">
+        <div class="formula-element-card">
+          <div class="num">01</div>
+          <div class="name">数量词</div>
+          <div class="desc">如"1件"、"2件装"，增加视觉冲击力和性价比感，吸引用户点击。</div>
+        </div>
+        <div class="formula-element-card">
+          <div class="num">02</div>
+          <div class="name">核心品类词</div>
+          <div class="desc">如"男装T恤"、"POLO衫"，必须前置，确保被平台算法精准抓取。</div>
+        </div>
+        <div class="formula-element-card">
+          <div class="num">03</div>
+          <div class="name">核心属性词</div>
+          <div class="desc">如"数码直喷"、"纯棉"、"宽松大码"，突出工艺、材质和版型。</div>
+        </div>
+        <div class="formula-element-card">
+          <div class="num">04</div>
+          <div class="name">风格/图案词</div>
+          <div class="desc">如"国潮复古"，具象化视觉卖点，吸引目标客群，提升点击率。</div>
+        </div>
+        <div class="formula-element-card">
+          <div class="num">05</div>
+          <div class="name">适用场景/人群</div>
+          <div class="desc">如"夏季休闲"、"学生百搭"，拓宽搜索流量入口，匹配更多需求。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Before/After Comparison -->
+    <div class="comparison fade-in">
+      <h3 class="comparison-title">优化示例</h3>
+      <div class="comparison-grid">
+        <div class="comparison-box before">
+          <div class="comparison-label">优化前</div>
+          <div class="comparison-text">男士短袖T恤数码印花衣服</div>
+        </div>
+        <div class="comparison-arrow">→</div>
+        <div class="comparison-box after">
+          <div class="comparison-label">优化后</div>
+          <div class="comparison-text">1件男士短袖T恤数码直喷 3D立体国潮印花 宽松舒适 夏季街头休闲百搭上衣</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Four Core Tips -->
+    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 24px; color: var(--color-text);">四大核心优化技巧</h3>
+    <div class="tips-grid">
+      <div class="tip-card fade-in">
+        <div class="tip-card-header">
+          <div class="tip-card-num">1</div>
+          <h4 class="tip-card-title">关键词绝对前置</h4>
+        </div>
+        <div class="tip-card-body">
+          <p><strong>算法重视度：</strong>搜索算法极度看重标题的前20个字符，这是决定商品是否能被精准抓取的关键。</p>
+          <p><strong>核心词位置：</strong>务必把"男装T恤"、"男士卫衣"等最核心的搜索词放在标题最前面。</p>
+          <p><strong>避免信息缺失：</strong>若核心词靠后，可能导致商品在搜索结果中排名靠后甚至无法展现。</p>
+        </div>
+      </div>
+      <div class="tip-card fade-in">
+        <div class="tip-card-header">
+          <div class="tip-card-num">2</div>
+          <h4 class="tip-card-title">突出工艺卖点</h4>
+        </div>
+        <div class="tip-card-body">
+          <p><strong>差异化表达：</strong>不要只写"印花"，应细化为"数码直喷"、"活性数码印花"、"高清数码印"等。</p>
+          <p><strong>传递品质感：</strong>精细化工艺词能向用户传递"图案清晰、色彩饱和、耐洗不褪色"的高品质感。</p>
+          <p><strong>形成竞争力：</strong>与普通胶印产品形成鲜明对比，提升产品在用户心中的价值。</p>
+        </div>
+      </div>
+      <div class="tip-card fade-in">
+        <div class="tip-card-header">
+          <div class="tip-card-num">3</div>
+          <h4 class="tip-card-title">巧用标点分段</h4>
+        </div>
+        <div class="tip-card-body">
+          <p><strong>使用分隔符：</strong>建议使用空格或逗号将不同的属性词隔开，如"纯棉数码直喷, 3D立体印花"。</p>
+          <p><strong>避免词堆砌：</strong>避免将所有关键词堆砌成一长串，难以阅读，影响用户的浏览决策。</p>
+          <p><strong>提升体验：</strong>结构清晰的标题能让用户在几秒内快速抓取核心信息，提升点击意愿。</p>
+        </div>
+      </div>
+      <div class="tip-card fade-in">
+        <div class="tip-card-header">
+          <div class="tip-card-num">4</div>
+          <h4 class="tip-card-title">结合热点场景</h4>
+        </div>
+        <div class="tip-card-body">
+          <p><strong>添加场景词：</strong>在标题尾部适当加入"夏季新款"、"运动健身"、"学生开学季"等词汇。</p>
+          <p><strong>借力热点：</strong>结合节日或热点事件，如"生日礼物"、"圣诞礼品"，有效拓宽搜索流量。</p>
+          <p><strong>挖掘长尾词：</strong>场景词能帮助商品匹配到更长尾、更具体的搜索词，获取精准流量。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Monitor -->
+    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 24px; color: var(--color-text);">持续迭代与复盘</h3>
+    <div class="data-monitor">
+      <div class="monitor-card fade-in">
+        <div class="step-num">STEP 01</div>
+        <h4 class="step-title">观察核心数据</h4>
+        <p class="step-desc">新品上架后，至少观察7天的曝光量、点击率等核心数据，了解标题表现。</p>
+      </div>
+      <div class="monitor-card fade-in">
+        <div class="step-num">STEP 02</div>
+        <h4 class="step-title">诊断问题</h4>
+        <p class="step-desc">如果曝光低，优先排查核心词是否准确；如果点击率低，则需优化中间的属性词和风格词。</p>
+      </div>
+      <div class="monitor-card fade-in">
+        <div class="step-num">STEP 03</div>
+        <h4 class="step-title">持续微调</h4>
+        <p class="step-desc">标题优化不是一劳永逸的，需要根据数据反馈进行持续的A/B测试和微调。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI Image Optimization -->
+<section class="ai-section">
+  <div class="ai-container">
+    <div class="module-header">
+      <div class="module-num" style="background: var(--color-green);">2</div>
+      <span class="module-label" style="color: var(--color-green);">AI 图片优化</span>
+    </div>
+    <h2 class="module-title">巧用AI优化图片（以拉美市场为例）</h2>
+    <p class="module-desc">认知拉美市场人种特征，通过AI工具实现商详图本地化改造，提升商品在目标市场的转化率。</p>
+
+    <!-- Market Analysis -->
+    <div class="ai-market-card fade-in">
+      <div class="ai-market-info">
+        <h3>拉美主要人种 & 地理位置情况认知</h3>
+        <p>拉美地区横跨南北半球，但绝大部分陆地位于南半球。拉美不是"白人市场"，也不是单一棕色人种市场；最核心是 <strong>Mestizo（白混黄）</strong> / <strong>Pardo（欧洲裔+原住民+非洲裔，多重混合）</strong> 等混血人群，占主体。</p>
+        <p>墨西哥偏原住民+欧洲混血，哥伦比亚和巴西要更多考虑非洲裔元素，阿根廷、乌拉圭、智利部分市场白人比例更高。</p>
+        <div class="ai-market-tags">
+          <span class="ai-market-tag">Mestizo 混血</span>
+          <span class="ai-market-tag">Pardo 多重混合</span>
+          <span class="ai-market-tag">本地化改造</span>
+          <span class="ai-market-tag">AI 商详</span>
+        </div>
+      </div>
+      <div class="ai-market-visual">
+        <div class="ai-market-bar">
+          <span class="bar-label">混血 Mestizo/Pardo</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 55%"></div></div>
+          <span class="bar-value">50-60%+</span>
+        </div>
+        <div class="ai-market-bar">
+          <span class="bar-label">白人 欧洲裔</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 28%"></div></div>
+          <span class="bar-value">20-30%+</span>
+        </div>
+        <div class="ai-market-bar">
+          <span class="bar-label">非洲裔</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 20%"></div></div>
+          <span class="bar-value">~20%</span>
+        </div>
+        <div class="ai-market-bar">
+          <span class="bar-label">原住民</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 8%"></div></div>
+          <span class="bar-value">~8%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Steps -->
+    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 24px; color: var(--color-text);">商详改造速成三部曲</h3>
+    <div class="ai-steps">
+      <div class="ai-step-card fade-in">
+        <div class="ai-step-num">1</div>
+        <div class="ai-step-icon">🎯</div>
+        <h4 class="ai-step-title">定位产品</h4>
+        <p class="ai-step-desc">明确你的产品是什么，确定品类定位和目标市场。</p>
+      </div>
+      <div class="ai-step-card fade-in">
+        <div class="ai-step-num">2</div>
+        <div class="ai-step-icon">🎨</div>
+        <h4 class="ai-step-title">确定风格</h4>
+        <p class="ai-step-desc">明确你要做什么风格，匹配目标市场人种特征和审美偏好。</p>
+      </div>
+      <div class="ai-step-card fade-in">
+        <div class="ai-step-num">3</div>
+        <div class="ai-step-icon">🤖</div>
+        <h4 class="ai-step-title">喂给AI</h4>
+        <p class="ai-step-desc">将对应风格的人模特征、肢体/姿势、配饰、背景直接喂给AI生成。</p>
+      </div>
+    </div>
+
+    <!-- Scene Cards -->
+    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 24px; color: var(--color-text);">拉美高搜高需场景优化 & AI改造指令</h3>
+    <div class="scene-grid">
+      <div class="scene-card fade-in">
+        <div class="scene-card-header">
+          <h4>⚽ 足球场景</h4>
+          <p>拉美最受欢迎的运动场景</p>
+        </div>
+        <div class="scene-card-body">
+          <div class="section-label">场景要素</div>
+          <p class="section-text">草坪、球门、看台、足球、训练锥、阳光、队友虚化背景</p>
+          <div class="section-label">人物动作</div>
+          <p class="section-text">奔跑、带球、射门、守门扑救、训练拉伸、赛前站姿、庆祝动作</p>
+          <div class="ai-prompt">
+            <div class="prompt-label">🤖 AI 改造指令</div>
+            保留商品主体与卖点，将画面改造成拉美本地化的足球训练/比赛场景商详图；模特为拉美男性球员形象，加入足球场、草坪、球门、足球等元素，动作可为站立展示、带球、跑动或守门，突出轻便透气、运动灵活和团队运动氛围，不要ai感过重要自然。
+          </div>
+        </div>
+      </div>
+      <div class="scene-card fade-in">
+        <div class="scene-card-header">
+          <h4>💪 健身场景</h4>
+          <p>高增长潜力品类场景</p>
+        </div>
+        <div class="scene-card-body">
+          <div class="section-label">场景要素</div>
+          <p class="section-text">哑铃、杠铃、训练凳、镜面、瑜伽垫、健身器械</p>
+          <div class="section-label">人物动作</div>
+          <p class="section-text">深蹲、硬拉、推举、拉伸、卷腹、壶铃训练、镜前整理装备</p>
+          <div class="ai-prompt">
+            <div class="prompt-label">🤖 AI 改造指令</div>
+            保留商品主体与卖点，将画面改造成拉美本地化的健身训练场景商详图；模特为拉美成年男性，身材精瘦结实或有训练线条，可以加入健身房、哑铃、壶铃、训练凳等元素，动作可为拉伸、抬腿、深蹲、举重，突出运动表现、透气速干和训练舒适感，不要ai感过重要自然。
+          </div>
+        </div>
+      </div>
+      <div class="scene-card fade-in">
+        <div class="scene-card-header">
+          <h4>🏖️ 沙滩度假</h4>
+          <p>拉美特色度假场景</p>
+        </div>
+        <div class="scene-card-body">
+          <div class="section-label">场景要素</div>
+          <p class="section-text">沙滩、海水、泳池、游艇、度假酒店、棕榈树、草帽、墨镜、躺椅、木栈道、海边栏杆</p>
+          <div class="section-label">人物动作</div>
+          <p class="section-text">坐在船边、海边站立、扶栏杆、单手插兜、整理衬衫、走在沙滩、坐在躺椅</p>
+          <div class="ai-prompt">
+            <div class="prompt-label">🤖 AI 改造指令</div>
+            保留商品主体与卖点，将画面改造成拉美本地化的沙滩度假场景商详图；模特为拉美成年男性，形象阳光自然，加入海滩、泳池、游艇、码头、墨镜、拖鞋、度假衬衫等元素，动作可为海边站立、坐在船边、靠栏杆或手持浮潜装备，突出清爽舒适、速干轻便和度假氛围，不要ai感过重要自然。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Display Methods -->
+    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 24px; color: var(--color-text);">分品类展示方式参考</h3>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-card-num" style="background: var(--color-green);">T</div>
+          <h4 class="tip-card-title">T恤类</h4>
+        </div>
+        <div class="tip-card-body">
+          <p>• 人模上身 + 多色块罗列展示</p>
+          <p>• 人模多姿态/多方位展示</p>
+          <p>• T恤多件装 — 多人模多色上身</p>
+        </div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-card-num" style="background: var(--color-green);">套</div>
+          <h4 class="tip-card-title">套装类</h4>
+        </div>
+        <div class="tip-card-body">
+          <p>• 套装 — 多人模多色上身</p>
+          <p>• 套装 — 上装正反面印花展示</p>
+        </div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-card-num" style="background: var(--color-green);">外</div>
+          <h4 class="tip-card-title">外套类</h4>
+        </div>
+        <div class="tip-card-body">
+          <p>• 外套 — 多人模/多姿态展示</p>
+          <p>• 外套 — 细节放大/正反展示</p>
+        </div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-card-header">
+          <div class="tip-card-num" style="background: var(--color-green);">💡</div>
+          <h4 class="tip-card-title">课堂复习要点</h4>
+        </div>
+        <div class="tip-card-body">
+          <p>• 定位产品 → 确定风格 → 喂给AI</p>
+          <p>• 人模特征匹配目标市场人种</p>
+          <p>• 场景要素自然融入，避免AI感过重</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Module 2: Pattern Library -->
+<section class="module module-bg-alt" id="module2">
+  <div class="module-container">
+    <div class="module-header">
+      <div class="module-num">2</div>
+      <span class="module-label">MODULE 02</span>
+    </div>
+    <h2 class="module-title">巧用平台版型库高效开款</h2>
+    <p class="module-desc">利用平台标准化版型文件，快速上新、降低售后、提升利润，让服装生产更标准、高效、可靠。</p>
+
+    <!-- Pattern Definition & Benefits -->
+    <div class="pattern-intro">
+      <div class="pattern-def-card fade-in">
+        <h3>什么是版型学习资料？</h3>
+        <p>版型学习资料是储存大量标准化、可复用的版型文件的数据库。它服务于三个核心场景：</p>
+        <div class="pattern-features">
+          <div class="pattern-feature">🔧 开发调用</div>
+          <div class="pattern-feature">💻 商家学习</div>
+          <div class="pattern-feature">🖥️ 平台管理</div>
+        </div>
+        <p style="margin-top: 20px;">版型学习资料内容包含：<strong>纸样预览图稿</strong>、<strong>版型真实穿着效果图</strong>、<strong>属性信息</strong>、<strong>尺码表</strong>、<strong>纸样CAD文件</strong>。</p>
+      </div>
+      <div class="pattern-benefits">
+        <div class="pattern-benefit fade-in">
+          <div class="benefit-icon">💰</div>
+          <div class="benefit-text">
+            <h4>省时省钱</h4>
+            <p>标准化版型文件可直接复用，减少开发时间和成本</p>
+          </div>
+        </div>
+        <div class="pattern-benefit fade-in">
+          <div class="benefit-icon">🚀</div>
+          <div class="benefit-text">
+            <h4>快速上新</h4>
+            <p>按类目查找参考版型，快速完成新款开发</p>
+          </div>
+        </div>
+        <div class="pattern-benefit fade-in">
+          <div class="benefit-icon">✅</div>
+          <div class="benefit-text">
+            <h4>版型稳定</h4>
+            <p>穿着得体的版型能有效降低客诉及售后问题</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- View Path -->
+    <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 36px; margin-bottom: 40px; box-shadow: var(--shadow-sm);" class="fade-in">
+      <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 24px; text-align: center;">版型学习资料查看路径</h3>
+      <div class="path-steps">
+        <div class="path-step">
+          <div class="path-step-num">1</div>
+          <span class="path-step-text">OMS</span>
+        </div>
+        <span class="path-arrow">→</span>
+        <div class="path-step">
+          <div class="path-step-num">2</div>
+          <span class="path-step-text">商品管理</span>
+        </div>
+        <span class="path-arrow">→</span>
+        <div class="path-step">
+          <div class="path-step-num">3</div>
+          <span class="path-step-text">尺码/版型管理</span>
+        </div>
+        <span class="path-arrow">→</span>
+        <div class="path-step">
+          <div class="path-step-num">4</div>
+          <span class="path-step-text">版型学习资料</span>
+        </div>
+        <span class="path-arrow">→</span>
+        <div class="path-step">
+          <div class="path-step-num">5</div>
+          <span class="path-step-text">按类目查找版型</span>
+        </div>
+      </div>
+      <p style="text-align: center; font-size: 14px; color: var(--color-text-light); margin-top: 16px;">找到适合自己的版型后下载使用</p>
+    </div>
+
+    <!-- Merchant Flow -->
+    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 24px; color: var(--color-text);">商家操作流程</h3>
+    <div class="merchant-flow">
+      <div class="flow-card fade-in">
+        <div class="flow-card-icon">🎯</div>
+        <h4 class="flow-card-title">确定目标款式</h4>
+        <p class="flow-card-desc">明确需要开发的目标款式</p>
+        <div class="flow-arrow">→</div>
+      </div>
+      <div class="flow-card fade-in">
+        <div class="flow-card-icon">🔍</div>
+        <h4 class="flow-card-title">查找参考版型</h4>
+        <p class="flow-card-desc">按类目查找相似版型</p>
+        <div class="flow-arrow">→</div>
+      </div>
+      <div class="flow-card fade-in">
+        <div class="flow-card-icon">📥</div>
+        <h4 class="flow-card-title">下载CAD文件</h4>
+        <p class="flow-card-desc">有相似版型则下载CAD文件，版师参考使用</p>
+        <div class="flow-arrow">→</div>
+      </div>
+      <div class="flow-card fade-in">
+        <div class="flow-card-icon">✅</div>
+        <h4 class="flow-card-title">对比还原效果</h4>
+        <p class="flow-card-desc">样品完成后对比还原需求效果，无可用版型则反馈给对接运营</p>
+      </div>
+    </div>
+
+    <!-- Merchant Rights -->
+    <div style="background: linear-gradient(135deg, var(--color-green-dark) 0%, var(--color-green) 100%); border-radius: var(--radius-lg); padding: 36px; color: #fff;" class="fade-in">
+      <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 24px;">版型学习资料使用权益</h3>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div>
+          <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">💰 提升利润</h4>
+          <p style="font-size: 14px; opacity: 0.85; line-height: 1.8;">穿着得体的版型能有效降低客诉及售后问题，有效将部分售后转化成利润。</p>
+        </div>
+        <div>
+          <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">🛡️ 售后优先协助</h4>
+          <p style="font-size: 14px; opacity: 0.85; line-height: 1.8;">关联版型有合身率数据展示，若合身率表现不佳，会有专人及时优化，关联商品会优先得到优化建议。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 36px; margin-top: 40px; border-left: 4px solid var(--color-orange);" class="fade-in">
+      <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 16px;">📋 总结与行动建议</h3>
+      <div style="font-size: 14px; color: var(--color-text-light); line-height: 2;">
+        <p><strong style="color: var(--color-text);">对商家：</strong>版型学习资料是降本增效、快速上新、降低售后的工具。</p>
+        <p><strong style="color: var(--color-text);">新款开发：</strong>请各位商家登录后台，亲自查看并试用版型库功能，快速开发符合市场需求的版型。</p>
+        <p><strong style="color: var(--color-text);">老款优化：</strong>比对尺寸高售后版型与版型库内同版型差异，及时优化以降低售后率。</p>
+        <p><strong style="color: var(--color-text);">反馈建议：</strong>积极将使用体验反馈至我们，共同优化提升。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Module 3: Trends -->
+<section class="trend-section" id="module3">
+  <div class="trend-container">
+    <div class="module-header">
+      <div class="module-num">3</div>
+      <span class="module-label">MODULE 03</span>
+    </div>
+    <h2 class="module-title">潮流印花趋势分析</h2>
+    <p class="module-desc">春夏热销款总结、把握世界杯流量、秋冬数码印开款推荐，掌握市场节奏，抢占流量先机。</p>
+
+    <!-- Spring/Summer Hot Selling -->
+    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 24px; color: var(--color-text);">1. 春夏热销款总结</h3>
+    
+    <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--color-green);">热销版型</h4>
+    <div class="hot-types">
+      <div class="hot-type-card fade-in">
+        <div class="hot-type-icon">👔</div>
+        <h4 class="hot-type-name">衬衫短裤套装</h4>
+        <span class="hot-type-tag">热销 🔥</span>
+      </div>
+      <div class="hot-type-card fade-in">
+        <div class="hot-type-icon">👕</div>
+        <h4 class="hot-type-name">短袖短裤套装</h4>
+        <span class="hot-type-tag">热销 🔥</span>
+      </div>
+      <div class="hot-type-card fade-in">
+        <div class="hot-type-icon">🎽</div>
+        <h4 class="hot-type-name">Polo短裤套装</h4>
+        <span class="hot-type-tag">热销 🔥</span>
+      </div>
+    </div>
+
+    <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--color-orange);">缺失版型（机会品类）</h4>
+    <div class="missing-types">
+      <div class="missing-type-card fade-in">
+        <div class="missing-type-icon">🧥</div>
+        <h4 class="missing-type-name">连帽短袖 + 短裤套装</h4>
+        <span class="missing-type-label">机会品类</span>
+      </div>
+      <div class="missing-type-card fade-in">
+        <div class="missing-type-icon">👔</div>
+        <h4 class="missing-type-name">短袖 + 衬衫 + 短裤套装</h4>
+        <span class="missing-type-label">机会品类</span>
+      </div>
+      <div class="missing-type-card fade-in">
+        <div class="missing-type-icon">👕</div>
+        <h4 class="missing-type-name">亨利衫 + 短裤套装</h4>
+        <span class="missing-type-label">机会品类</span>
+      </div>
+    </div>
+
+    <!-- World Cup -->
+    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 24px; color: var(--color-text);">2. 把握世界杯流量</h3>
+    <div class="worldcup-banner fade-in">
+      <div>
+        <h3>⚽ 世界杯流量红利</h3>
+        <p>世界杯是全球最大的体育盛事之一，足球主题数码印花产品将迎来巨大流量红利。提前布局足球场景的数码印花商品，包括球衣风格T恤、足球元素印花套装等，借助赛事热度实现销量爆发。</p>
+      </div>
+      <div class="worldcup-timeline">
+        <div class="wc-event">
+          <div class="wc-event-date">2026</div>
+          <div class="wc-event-info">
+            <h5>世界杯年</h5>
+            <p>足球主题商品迎来流量高峰</p>
+          </div>
+        </div>
+        <div class="wc-event">
+          <div class="wc-event-date">赛前</div>
+          <div class="wc-event-info">
+            <h5>备货期</h5>
+            <p>提前2-3个月完成选品备货</p>
+          </div>
+        </div>
+        <div class="wc-event">
+          <div class="wc-event-date">赛事</div>
+          <div class="wc-event-info">
+            <h5>爆发期</h5>
+            <p>赛事期间搜索量激增，销量爆发</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Season Timeline -->
+    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 24px; color: var(--color-text);">3. 秋冬数码印开款方向</h3>
+    <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 20px; color: var(--color-green);">换季节奏解析</h4>
+    <div class="season-timeline">
+      <div class="season-card fade-in">
+        <span class="season-badge">当前阶段</span>
+        <h4>5月 - 6月</h4>
+        <p class="season-action"><strong>选品备货启动期</strong></p>
+        <p class="season-action">完成秋季新品的选品、打样及首批备货。</p>
+        <p class="season-reason">欧美市场在7月-8月就会迎来早秋和返校季（Back to School）的第一波销售高峰。</p>
+      </div>
+      <div class="season-card fade-in">
+        <span class="season-badge">物流发货期</span>
+        <h4>7月 - 8月</h4>
+        <p class="season-action"><strong>物流发货与秋季上新期</strong></p>
+        <p class="season-action">安排秋季货品陆续上架早秋新品（连帽卫衣套装、长袖衬衫、夹克等）。</p>
+        <p class="season-reason">8月是欧美秋季新品的全面爆发期，也是夏装清仓、为秋装腾出流量和库存空间的节点。</p>
+      </div>
+      <div class="season-card fade-in">
+        <span class="season-badge">销售旺季</span>
+        <h4>9月 - 10月</h4>
+        <p class="season-action"><strong>秋季销售旺季与秋冬过渡期</strong></p>
+        <p class="season-action">秋季产品进入销售高峰期，同时开始准备更厚实的初冬款（加绒卫衣、厚外套）。</p>
+        <p class="season-reason">9月-10月气温正式下降，是秋装需求最旺盛的时期。</p>
+      </div>
+    </div>
+
+    <!-- Holiday Elements -->
+    <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 20px; color: var(--color-green);">欧美下半年主要节日元素归纳</h4>
+    <div class="holiday-grid">
+      <div class="holiday-card fade-in">
+        <div class="holiday-header">
+          <div class="holiday-icon">🎃</div>
+          <div>
+            <h4 class="holiday-name">万圣节</h4>
+            <p class="holiday-date">10月31日</p>
+          </div>
+        </div>
+        <div class="holiday-elements">
+          <span class="holiday-element">南瓜灯</span>
+          <span class="holiday-element">蝙蝠</span>
+          <span class="holiday-element">骷髅</span>
+          <span class="holiday-element">骨骼结构</span>
+          <span class="holiday-element">红黑扑克</span>
+          <span class="holiday-element">蜘蛛网</span>
+          <span class="holiday-element">女巫</span>
+        </div>
+      </div>
+      <div class="holiday-card fade-in">
+        <div class="holiday-header">
+          <div class="holiday-icon">🍂</div>
+          <div>
+            <h4 class="holiday-name">感恩节</h4>
+            <p class="holiday-date">11月第四个星期四</p>
+          </div>
+        </div>
+        <div class="holiday-elements">
+          <span class="holiday-element">枫叶</span>
+          <span class="holiday-element">橡树叶</span>
+          <span class="holiday-element">麦穗</span>
+          <span class="holiday-element">火鸡</span>
+          <span class="holiday-element">玉米穗</span>
+        </div>
+      </div>
+      <div class="holiday-card fade-in">
+        <div class="holiday-header">
+          <div class="holiday-icon">🎄</div>
+          <div>
+            <h4 class="holiday-name">圣诞节</h4>
+            <p class="holiday-date">12月25日</p>
+          </div>
+        </div>
+        <div class="holiday-elements">
+          <span class="holiday-element">圣诞老人</span>
+          <span class="holiday-element">驯鹿</span>
+          <span class="holiday-element">雪花</span>
+          <span class="holiday-element">圣诞树</span>
+          <span class="holiday-element">铃铛</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AW Patterns -->
+    <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 20px; color: var(--color-green);">秋冬热门花型推荐</h4>
+    <div class="aw-patterns">
+      <div class="aw-pattern-card fade-in">
+        <div class="aw-pattern-num">01</div>
+        <div class="aw-pattern-icon">🦅</div>
+        <h4 class="aw-pattern-name">美式复古动物大图腾</h4>
+        <p class="aw-pattern-desc">大气动物图案，复古美式风格</p>
+      </div>
+      <div class="aw-pattern-card fade-in">
+        <div class="aw-pattern-num">02</div>
+        <div class="aw-pattern-icon">🌸</div>
+        <h4 class="aw-pattern-name">暗黑暗夜花卉</h4>
+        <p class="aw-pattern-desc">深色调花卉设计，神秘高级</p>
+      </div>
+      <div class="aw-pattern-card fade-in">
+        <div class="aw-pattern-num">03</div>
+        <div class="aw-pattern-icon"> glitch️</div>
+        <h4 class="aw-pattern-name">故障艺术与数码迷雾</h4>
+        <p class="aw-pattern-desc">科技感故障艺术风格</p>
+      </div>
+      <div class="aw-pattern-card fade-in">
+        <div class="aw-pattern-num">04</div>
+        <div class="aw-pattern-icon">🔷</div>
+        <h4 class="aw-pattern-name">经典几何</h4>
+        <p class="aw-pattern-desc">几何图形排列，经典百搭</p>
+      </div>
+      <div class="aw-pattern-card fade-in">
+        <div class="aw-pattern-num">05</div>
+        <div class="aw-pattern-icon"> Gothic️</div>
+        <h4 class="aw-pattern-name">哥特风</h4>
+        <p class="aw-pattern-desc">哥特风格图案，个性前卫</p>
+      </div>
+    </div>
+
+    <!-- AW Types -->
+    <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 20px; color: var(--color-green);">秋冬热门版型推荐</h4>
+    <div class="aw-types-grid">
+      <div class="aw-type-section fade-in">
+        <h4>卫衣套装</h4>
+        <div class="aw-type-list">
+          <div class="aw-type-item"><div class="item-dot"></div><span>拉链卫衣套装</span></div>
+          <div class="aw-type-item"><div class="item-dot"></div><span>圆领卫衣套装</span></div>
+          <div class="aw-type-item"><div class="item-dot"></div><span>连帽卫衣套装</span></div>
+        </div>
+      </div>
+      <div class="aw-type-section fade-in">
+        <h4>Polo套装</h4>
+        <div class="aw-type-list">
+          <div class="aw-type-item"><div class="item-dot"></div><span>立领POLO + 休闲长裤</span></div>
+          <div class="aw-type-item"><div class="item-dot"></div><span>翻领POLO + 休闲长裤</span></div>
+          <div class="aw-type-item"><div class="item-dot"></div><span>圆领POLO + 休闲长裤</span></div>
+        </div>
+      </div>
+      <div class="aw-type-section fade-in">
+        <h4>长袖衬衫套装</h4>
+        <div class="aw-type-list">
+          <div class="aw-type-item"><div class="item-dot"></div><span>长袖衬衫 + 休闲裤</span></div>
+          <div class="aw-type-item"><div class="item-dot"></div><span>长袖衬衫 + 西装裤</span></div>
+        </div>
+      </div>
+      <div class="aw-type-section fade-in">
+        <h4>夹克套装</h4>
+        <div class="aw-type-list">
+          <div class="aw-type-item"><div class="item-dot"></div><span>夹克 + 休闲裤套装</span></div>
+          <div class="aw-type-item"><div class="item-dot"></div><span>夹克 + 运动裤套装</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Module 4: Compliance -->
+<section class="compliance-section" id="module4">
+  <div class="compliance-container">
+    <div class="module-header">
+      <div class="module-num">4</div>
+      <span class="module-label">MODULE 04</span>
+    </div>
+    <h2 class="module-title">描述不符避雷指南</h2>
+    <p class="module-desc">规避AI图过度美化、3D误导、参数不符三大常见问题，减少客诉纠纷，提升消费者满意度。</p>
+
+    <div class="warning-grid">
+      <div class="warning-card fade-in">
+        <div class="warning-num">1</div>
+        <h4 class="warning-title">AI图过度美化</h4>
+        <p class="warning-desc">AI图过度美化，与实物效果差距大，与消费者心理预期不符。使用AI生成商详图时需保持商品真实质感，避免过度修饰导致与实物差距过大。</p>
+        <a href="https://agentseller.temu.com/main/course/detail?courseId=2503120000810" target="_blank" class="warning-link">查看商家端课程 →</a>
+      </div>
+      <div class="warning-card fade-in">
+        <div class="warning-num">2</div>
+        <h4 class="warning-title">3D误导</h4>
+        <p class="warning-desc">实物为平面商品，轮播图中商品为3D。不应将平面印花商品通过AI处理成3D效果展示，误导消费者对商品实际效果的认知。</p>
+        <a href="https://agentseller.temu.com/main/course/detail?courseId=2503120000810" target="_blank" class="warning-link">查看商家端课程 →</a>
+      </div>
+      <div class="warning-card fade-in">
+        <div class="warning-num">3</div>
+        <h4 class="warning-title">参数不符</h4>
+        <p class="warning-desc">实物数量、材质、尺寸、重量、功能、成分等信息与商家宣称不一致。商品参数必须与实物完全一致，避免因信息不准确导致售后纠纷。</p>
+        <a href="https://agentseller.temu.com/main/course/detail?courseId=12071998396" target="_blank" class="warning-link">查看商家端课程 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <h2 class="footer-title">谢谢观看！祝大家<span class="highlight">生意兴隆</span>~</h2>
+    <p class="footer-subtitle">掌握数码印花运营核心技能，抢占市场先机，实现爆单增长</p>
+    <div class="footer-actions">
+      <a href="#hero" class="btn-primary">回到顶部 ↑</a>
+      <a href="#toc" class="btn-secondary">复习课程</a>
+    </div>
+    <div class="footer-info">
+      <div class="footer-info-item">📢 宣讲人：桓元子</div>
+      <div class="footer-info-item">📅 2026.5.29</div>
+      <div class="footer-info-item">📚 男装数码印专题直播</div>
+    </div>
+    <p class="footer-copyright">本页面内容仅供商家培训学习使用</p>
+  </div>
+</footer>
+
+<script>
+// Scroll progress bar
+window.addEventListener('scroll', function() {
+  var scrollProgress = document.getElementById('scrollProgress');
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var progress = (scrollTop / scrollHeight) * 100;
+  scrollProgress.style.width = progress + '%';
+  
+  // Active nav link
+  var sections = document.querySelectorAll('section[id], div[id="hero"]');
+  var navLinks = document.querySelectorAll('.navbar-menu a');
+  var current = '';
+  
+  document.querySelectorAll('section[id], div[id]').forEach(function(sec) {
+    var top = sec.offsetTop - 100;
+    if (scrollTop >= top) current = sec.id;
+  });
+  
+  navLinks.forEach(function(link) {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+  });
+});
+
+// Fade-in animation on scroll
+var observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in').forEach(function(el) {
+  observer.observe(el);
+});
+
+// Animate progress bars on scroll
+var barObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      var bars = entry.target.querySelectorAll('.bar-fill');
+      bars.forEach(function(bar) {
+        var width = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(function() { bar.style.width = width; }, 100);
+      });
+    }
+  });
+}, { threshold: 0.3 });
+
+var marketCard = document.querySelector('.ai-market-visual');
+if (marketCard) barObserver.observe(marketCard.closest('.ai-market-card'));
+</script>
+
+</body>
+</html>
